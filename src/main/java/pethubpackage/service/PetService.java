@@ -9,5 +9,5 @@ public interface PetService {
     public PetModel getPet(Long pet_id);
     public void addPet(PetModel petAdd);
     public void deletePet(Long pet_id);
-    // public void updatePet();
+    public void updatePet(Long pet_id, PetModel petModel);
 }

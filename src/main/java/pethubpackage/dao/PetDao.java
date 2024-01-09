@@ -12,6 +12,6 @@ public interface PetDao {
     PetModel getPet(Long pet_id);
     void addPet(PetModel petAdd);
     void deletePet(Long pet_id);
-    // void updatePet();
+    void updatePet(Long pet_id, PetModel petModel);
 
 }

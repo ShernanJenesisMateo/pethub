@@ -37,4 +37,23 @@
             pet_id = #{pet_id}
     </update>
     
+    <update id="updatePet">
+        UPDATE 
+            pet_tbl
+        SET 
+            pet_name = #{petModel.pet_name},
+            pet_specie_id = #{petModel.pet_specie_id},
+            pet_breed = #{petModel.pet_breed},
+            pet_gender_id = #{petModel.pet_gender_id},
+            pet_age = #{petModel.pet_age},
+            pet_description = #{petModel.pet_description},
+            prev_guardian_id = #{petModel.prev_guardian_id},
+            new_guardian_id = #{petModel.new_guardian_id},
+            is_available_to_adopt = #{petModel.is_available_to_adopt},
+            adoption_date_time = #{petModel.adoption_date_time},
+            admission_date_time = #{petModel.admission_date_time}
+        WHERE
+            pet_id = #{pet_id}
+    </update>
+    
 </mapper>

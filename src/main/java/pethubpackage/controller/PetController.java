@@ -43,4 +43,10 @@ public class PetController {
         petService.deletePet(pet_id);
         return ResponseEntity.ok("Pet deleted successfully");
     }
+
+    @PutMapping("/update-pet/{pet_id}")
+    public ResponseEntity<String> updatePet(@PathVariable("pet_id") Long pet_id, @RequestBody PetModel petModel){
+        petService.updatePet(pet_id, petModel);
+        return ResponseEntity.ok("Pet updated successfully");
+    }
 }
