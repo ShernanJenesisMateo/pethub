@@ -11,7 +11,7 @@ public interface PetDao {
     List<PetModel> getAllPet();
     PetModel getPet(Long pet_id);
     void addPet(PetModel petAdd);
-    // void deletePet();
+    void deletePet();
     // void updatePet();
 
 }
