@@ -29,4 +29,9 @@ public class PetServiceImpl implements PetService {
     public void addPet(PetModel petAdd) {
         petDao.addPet(petAdd);
     }
+
+    @Override
+    public void deletePet(Long pet_id) {
+        petDao.deletePet(pet_id);
+    }
 }

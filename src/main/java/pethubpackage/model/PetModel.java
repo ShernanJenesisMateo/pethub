@@ -18,5 +18,5 @@ public class PetModel {
     private boolean is_available_to_adopt;
     private Timestamp adoption_date_time;
     private Timestamp admission_date_time;
-
+    private boolean is_deleted;
 }

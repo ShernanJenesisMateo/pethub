@@ -8,6 +8,8 @@
             *
         FROM
             pet_tbl
+        WHERE
+            is_deleted = false
     </select>
 
     <select id="getPet">
@@ -21,8 +23,18 @@
     
     <insert id="addPet">
         INSERT INTO
-            pet_tbl (pet_name, pet_specie_id, pet_breed, pet_gender_id, pet_age, pet_description, prev_guardian_id, new_guardian_id, is_available_to_adopt, adoption_date_time, admission_date_time)
+            pet_tbl (pet_name, pet_specie_id, pet_breed, pet_gender_id, pet_age, pet_description, prev_guardian_id, new_guardian_id, is_available_to_adopt, adoption_date_time, admission_date_time, is_deleted)
         VALUES
-            (#{pet_name}, #{pet_specie_id}, #{pet_breed}, #{pet_gender_id}, #{pet_age}, #{pet_description}, #{prev_guardian_id}, #{new_guardian_id}, #{is_available_to_adopt}, #{adoption_date_time}, #{admission_date_time})
+            (#{pet_name}, #{pet_specie_id}, #{pet_breed}, #{pet_gender_id}, #{pet_age}, #{pet_description}, #{prev_guardian_id}, #{new_guardian_id}, #{is_available_to_adopt}, #{adoption_date_time}, #{admission_date_time}, #{is_deleted})
     </insert>
+
+    <update id="deletePet">
+        UPDATE 
+            pet_tbl
+        SET 
+            is_deleted = true
+        WHERE
+            pet_id = #{pet_id}
+    </update>
+    
 </mapper>
