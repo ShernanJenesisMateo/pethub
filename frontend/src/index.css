@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,6 +16,22 @@ code {
     monospace;
 }
 
-.topnav {
-  background-color: #333;
+.hero-section {
+  /* background-image: url('../images/pets/withBackground/petsAtHome.jpg'); */
+  background-image: url('../images/pets/withBackground/dog-cat-bed.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-size: 100% 100%; */
+}
+
+/* .blob-shape {
+  background-color: #3498db;
+  border: 5px solid red;
+  border-radius: 50% 50% 60% 40% / 70% 40% 60% 30%;
+} */
+
+.hero-bg{
+  /* background: rgb(139,0,147);
+  background: radial-gradient(circle, rgba(139,0,147,0.6) 1%, rgba(67,185,41,0.6) 93%); */
 }
