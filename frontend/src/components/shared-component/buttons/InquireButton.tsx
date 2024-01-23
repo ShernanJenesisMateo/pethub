@@ -108,7 +108,7 @@ export default function DownloadButton() {
 
     return (
             <div className="flex justify-center">
-                <button className="download-button transform active:scale-95 bg-purple-950 hover:bg-purple-800 text-white px-5 py-6 rounded-lg font-bold tracking-widest w-full">
+                <button className="download-button transform active:scale-95 bg-lime-700 hover:bg-lime-600 text-white px-5 py-6 rounded-lg font-bold tracking-widest w-full">
                     <div className="flex justify-center items-center relative">
                         <div className="svg-container">
                             {/* <!-- Download Icon --> */}

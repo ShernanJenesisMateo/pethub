@@ -22,16 +22,5 @@ code {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* background-size: 100% 100%; */
-}
-
-/* .blob-shape {
-  background-color: #3498db;
-  border: 5px solid red;
-  border-radius: 50% 50% 60% 40% / 70% 40% 60% 30%;
-} */
-
-.hero-bg{
-  /* background: rgb(139,0,147);
-  background: radial-gradient(circle, rgba(139,0,147,0.6) 1%, rgba(67,185,41,0.6) 93%); */
+  border: 3px solid red;
 }
