@@ -6,12 +6,12 @@ import ServicesDropdown from './ServicesDropdown'; // Update the path as per you
 import Logo from './Logo';
 
 const navigation = [
-    { name: 'Services', href: '#', dropdown: true },
-    { name: 'Available pets', href: '#' },
-    { name: 'FAQs', href: '#' },
-    { name: 'Success stories', href: '#' },
-    { name: 'Articles', href: '#' },
-    { name: 'Contact us', href: '#' },
+    { name: 'Services', href: '/pethub', dropdown: true },
+    { name: 'Available pets', href: '/pethub' },
+    { name: 'FAQs', href: '/pethub' },
+    { name: 'Success stories', href: '/pethub' },
+    { name: 'Articles', href: '/pethub' },
+    { name: 'Contact us', href: '/pethub' },
 ]
 
 export default function TopNavigation() {
@@ -49,7 +49,7 @@ export default function TopNavigation() {
                     </div>
 
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" className="text-lg font-semibold leading-6 text-gray-900 bg-lime-500 py-2 px-4 rounded-md">
+                        <a href="/pethub" className="text-lg font-semibold leading-6 text-gray-900 bg-lime-500 py-2 px-4 rounded-md">
                             Sign in
                         </a>
                     </div>
@@ -83,7 +83,7 @@ export default function TopNavigation() {
                                 </div>
                                 <div className="py-6">
                                     <a
-                                        href="#"
+                                        href="/pethub"
                                         className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                     >
                                         Log in
