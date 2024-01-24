@@ -8,7 +8,10 @@ export default function LandingPage() {
                 <TopNavigation />
             </div>
             <div className="flex flex-1 items-center justify-start w-screen hero-section">
-                <div className="flex flex-col border h-4/3 w-full py-10 mx-10 px-5">
+                <div className="overlay">
+
+                </div>
+                <div className="flex flex-col border h-4/3 w-full py-10 mx-10 px-5 z-50">
                     <div className="flex flex-col px-2">
                         <p className="text-7xl font-semibold text-slate-100 flex-1 flex items-end"> <span className="font-black">Pet Hub</span> - A place where every </p>
                         <p className="text-7xl font-semibold text-slate-100 flex-1">pet has a story</p>

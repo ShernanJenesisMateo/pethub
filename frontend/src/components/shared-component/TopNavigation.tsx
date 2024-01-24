@@ -19,7 +19,7 @@ export default function TopNavigation() {
 
     return (
         <div className="h-26 w-screen">
-            <header className="z-50 bg-gray-50 ">
+            <header className="z-50 bg-zinc-100 ">
                 <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                     <div className="lg:flex-1" >
                         <Logo />

@@ -23,4 +23,11 @@ code {
   background-position: center;
   background-size: cover;
   border: 3px solid red;
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
